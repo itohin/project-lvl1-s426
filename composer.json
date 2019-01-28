@@ -9,6 +9,7 @@
         "email": "tohinst@yandex.ru"
       }
     ],
+    "minimum-stability": "dev",
     "bin": [
       "bin/brain-games"
     ]
