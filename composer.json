@@ -1,7 +1,7 @@
 {
     "name": "itohin/brain-games",
     "description": "mini cli games",
-    "keywords": ["games","cli"],
+    "keywords": ["games", "cli"],
     "type": "project",
     "authors": [
       {
