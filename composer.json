@@ -1,0 +1,15 @@
+{
+    "name": "itohin/brain-games",
+    "description": "mini cli games",
+    "keywords": ["games","cli"],
+    "type": "project",
+    "authors": [
+      {
+        "name": "Anton Tomin",
+        "email": "tohinst@yandex.ru"
+      }
+    ],
+    "bin": [
+      "bin/brain-games"
+    ]
+}
