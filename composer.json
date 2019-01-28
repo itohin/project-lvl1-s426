@@ -9,8 +9,15 @@
         "email": "tohinst@yandex.ru"
       }
     ],
-    "minimum-stability": "dev",
+    "autoload": {
+      "files": [
+        "src/Cli.php"
+      ]
+    },
     "bin": [
       "bin/brain-games"
-    ]
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "dev-master"
+    }
 }
