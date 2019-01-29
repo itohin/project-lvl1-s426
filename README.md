@@ -18,3 +18,8 @@ brain-games
 
 brain-even
 [![asciicast](https://asciinema.org/a/KJ40GExHiSqkZIopnXNsYqrjR.svg)](https://asciinema.org/a/KJ40GExHiSqkZIopnXNsYqrjR)
+
+## Start Calculator Game
+
+brain-calc
+[![asciicast](https://asciinema.org/a/mXKbTjdLZrSiu3MLe3QYdD1Ak.svg)](https://asciinema.org/a/mXKbTjdLZrSiu3MLe3QYdD1Ak)
