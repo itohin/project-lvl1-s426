@@ -22,19 +22,25 @@ function greeting()
     return $name;
 }
 
+function isEven($number)
+{
+    return $number % 2 === 0;
+}
+
 function game($name)
 {
-    for ($i = 0, $counter = 0; $i < 3; $i++) {
-        $number = rand(1, 99);
-        $correct = $number % 2 === 0 ? 'yes' : 'no';
-        line('Question: ' . $number);
-        $result = prompt('Your answer');
+    $rounds = 3;
 
-        if ($result === $correct) {
-            $counter++;
+    for ($i = 0; $i < $rounds; $i++) {
+        $question = rand(1, 99);
+        $correct = isEven($question) ? 'yes' : 'no';
+        line('Question: ' . $question);
+        $answer = prompt('Your answer');
+
+        if ($answer === $correct) {
             line('Correct!');
         } else {
-            line("'{$result}' is wrong answer ;(. Correct answer was '{$correct}'.");
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correct}'.");
             line("Let's try again, {$name}!");
             return;
         }
