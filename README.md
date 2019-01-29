@@ -13,3 +13,8 @@ composer global require itohin/brain-games
 ## Command to launch
 
 brain-games
+
+## Start IsEven Game
+
+brain-even
+[![asciicast](https://asciinema.org/a/KJ40GExHiSqkZIopnXNsYqrjR.svg)](https://asciinema.org/a/KJ40GExHiSqkZIopnXNsYqrjR)
