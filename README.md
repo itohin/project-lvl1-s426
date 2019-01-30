@@ -23,3 +23,8 @@ brain-even
 
 brain-calc
 [![asciicast](https://asciinema.org/a/mXKbTjdLZrSiu3MLe3QYdD1Ak.svg)](https://asciinema.org/a/mXKbTjdLZrSiu3MLe3QYdD1Ak)
+
+## Start GCD Game
+
+brain-gcd
+[![asciicast](https://asciinema.org/a/mPTuUSH38iiMhuOYabmrm7O3r.svg)](https://asciinema.org/a/mPTuUSH38iiMhuOYabmrm7O3r)
