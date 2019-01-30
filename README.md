@@ -28,3 +28,8 @@ brain-calc
 
 brain-gcd
 [![asciicast](https://asciinema.org/a/mPTuUSH38iiMhuOYabmrm7O3r.svg)](https://asciinema.org/a/mPTuUSH38iiMhuOYabmrm7O3r)
+
+## Start Progression Game
+
+brain-progression
+[![asciicast](https://asciinema.org/a/Q288PtKlsSGZwlaSCprGkPrKo.svg)](https://asciinema.org/a/Q288PtKlsSGZwlaSCprGkPrKo)
