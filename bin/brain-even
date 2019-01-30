@@ -9,4 +9,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-\BrainGames\Games\IsEven\run('Answer "yes" if number even otherwise answer "no".');
+\BrainGames\Games\IsEven\run();

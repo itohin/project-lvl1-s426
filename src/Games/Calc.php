@@ -2,14 +2,12 @@
 
 namespace BrainGames\Games\Calc;
 
-use function \cli\line;
-use function \cli\prompt;
-use function BrainGames\Kernel\greeting;
 use function BrainGames\Kernel\game;
 
-function run($task)
+const TASK_OF_GAME = 'What is the result of the expression?';
+
+function run()
 {
-    $name = greeting($task);
     $gameData = function () {
         $firstNumber = rand(1, 99);
         $secondNumber = rand(1, 99);
@@ -21,7 +19,7 @@ function run($task)
 
         return [$question, $correct];
     };
-    game($name, $gameData);
+    game(TASK_OF_GAME, $gameData);
 }
 
 function getCorrect($firstNumber, $secondNumber, $operand)

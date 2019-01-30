@@ -2,21 +2,19 @@
 
 namespace BrainGames\Games\IsEven;
 
-use function \cli\line;
-use function \cli\prompt;
-use function BrainGames\Kernel\greeting;
 use function BrainGames\Kernel\game;
 
-function run($task)
+const TASK_OF_GAME = 'Answer "yes" if number even otherwise answer "no".';
+
+function run()
 {
-    $name = greeting($task);
     $gameData = function () {
         $question = rand(1, 99);
         $correct = isEven($question) ? 'yes' : 'no';
 
         return [$question, $correct];
     };
-    game($name, $gameData);
+    game(TASK_OF_GAME, $gameData);
 }
 
 function isEven($number)

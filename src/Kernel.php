@@ -18,8 +18,10 @@ function greeting($task)
     return $name;
 }
 
-function game($name, $gameData)
+function game($task, $gameData)
 {
+    $name = greeting($task);
+
     for ($i = 0; $i < ROUNDS; $i++) {
         [$question, $correct] = $gameData();
         line('Question: ' . $question);
