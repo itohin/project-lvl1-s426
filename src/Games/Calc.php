@@ -15,14 +15,14 @@ function run()
         $randKey = rand(0, 2);
 
         $question = "{$firstNumber} {$operands[$randKey]} {$secondNumber}";
-        $correct = getCorrect($firstNumber, $secondNumber, $operands[$randKey]);
+        $correct = calculate($firstNumber, $secondNumber, $operands[$randKey]);
 
         return [$question, $correct];
     };
     game(TASK_OF_GAME, $gameData);
 }
 
-function getCorrect($firstNumber, $secondNumber, $operand)
+function calculate($firstNumber, $secondNumber, $operand)
 {
     $correct = 0;
     switch ($operand) {
