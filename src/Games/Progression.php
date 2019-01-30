@@ -10,7 +10,7 @@ const PROGRESSION_LENGTH = 10;
 function run()
 {
     $getGameData = function () {
-        $firstPosition = rand(1, 10);
+        $firstPosition = rand(0, 9);
         $interval = rand(2, 7);
 
         return getProgression($firstPosition, $interval);
