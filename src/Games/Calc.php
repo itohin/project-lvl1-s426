@@ -8,18 +8,18 @@ const TASK_OF_GAME = 'What is the result of the expression?';
 
 function run()
 {
-    $gameData = function () {
+    $getGameData = function () {
         $firstNumber = rand(1, 99);
         $secondNumber = rand(1, 99);
         $operands = array("+", "-", "*");
-        $randKey = rand(0, 2);
+        $randKey = array_rand($operands);
 
         $question = "{$firstNumber} {$operands[$randKey]} {$secondNumber}";
         $correct = calculate($firstNumber, $secondNumber, $operands[$randKey]);
 
         return [$question, $correct];
     };
-    game(TASK_OF_GAME, $gameData);
+    game(TASK_OF_GAME, $getGameData);
 }
 
 function calculate($firstNumber, $secondNumber, $operand)

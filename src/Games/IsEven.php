@@ -8,13 +8,13 @@ const TASK_OF_GAME = 'Answer "yes" if number even otherwise answer "no".';
 
 function run()
 {
-    $gameData = function () {
+    $getGameData = function () {
         $question = rand(1, 99);
         $correct = isEven($question) ? 'yes' : 'no';
 
         return [$question, $correct];
     };
-    game(TASK_OF_GAME, $gameData);
+    game(TASK_OF_GAME, $getGameData);
 }
 
 function isEven($number)
