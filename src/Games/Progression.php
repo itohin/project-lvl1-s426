@@ -5,30 +5,29 @@ namespace BrainGames\Games\Progression;
 use function BrainGames\Kernel\game;
 
 const TASK_OF_GAME = 'What number is missing in the progression?';
+const PROGRESSION_LENGTH = 10;
 
 function run()
 {
-    echo 'Progression';
+    $getGameData = function () {
+        $firstPosition = rand(1, 10);
+        $interval = rand(2, 7);
+
+        return getProgression($firstPosition, $interval);
+    };
+    game(TASK_OF_GAME, $getGameData);
 }
 
-//function run()
-//{
-//    $gameData = function () {
-//        $firstNumber = rand(1, 99);
-//        $secondNumber = rand(1, 99);
-//
-//        $question = "{$firstNumber} {$secondNumber}";
-//        $correct = gcd($firstNumber, $secondNumber);
-//
-//        return [$question, $correct];
-//    };
-//    game(TASK_OF_GAME, $gameData);
-//}
-//
-//function gcd(int $first, int $second)
-//{
-//    if ($second == 0) {
-//        return $first;
-//    }
-//    return gcd($second, $first % $second);
-//}
+function getProgression($firstPosition, $interval)
+{
+    $progression[] = $firstPosition;
+
+    for ($i = 1; $i < PROGRESSION_LENGTH; $i++) {
+        $progression[$i] = $progression[$i - 1] + $interval;
+    }
+
+    $correct = $progression[$firstPosition];
+    $progression[$firstPosition] = '..';
+
+    return [implode(' ', $progression), $correct];
+}
