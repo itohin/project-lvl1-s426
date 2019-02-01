@@ -16,10 +16,11 @@ function run()
     $getGameData = function () {
         $firstPosition = rand(MIN_POSITION, MAX_POSITION);
         $interval = rand(MIN_STEP, MAX_STEP);
+        $hiddenNumber = rand(MIN_POSITION, PROGRESSION_LENGTH - 1);
 
         $progression = getProgression($firstPosition, $interval, PROGRESSION_LENGTH);
-        $correct = $progression[$firstPosition];
-        $progression[$firstPosition] = '..';
+        $correct = $progression[$hiddenNumber];
+        $progression[$hiddenNumber] = '..';
         $question = implode(' ', $progression);
 
         return [$question, $correct];
