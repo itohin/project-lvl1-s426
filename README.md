@@ -8,29 +8,23 @@ Set of mini games launched from the console
 ## Installation
 
 composer global require itohin/brain-games
-[![asciicast](https://asciinema.org/a/STf8ZIkxwDr2g0dmWAZ80dsFO.svg)](https://asciinema.org/a/STf8ZIkxwDr2g0dmWAZ80dsFO)
 
 ## Start IsEven Game
 
 brain-even
-[![asciicast](https://asciinema.org/a/KJ40GExHiSqkZIopnXNsYqrjR.svg)](https://asciinema.org/a/KJ40GExHiSqkZIopnXNsYqrjR)
 
 ## Start Calculator Game
 
 brain-calc
-[![asciicast](https://asciinema.org/a/mXKbTjdLZrSiu3MLe3QYdD1Ak.svg)](https://asciinema.org/a/mXKbTjdLZrSiu3MLe3QYdD1Ak)
 
 ## Start GCD Game
 
 brain-gcd
-[![asciicast](https://asciinema.org/a/mPTuUSH38iiMhuOYabmrm7O3r.svg)](https://asciinema.org/a/mPTuUSH38iiMhuOYabmrm7O3r)
 
 ## Start Progression Game
 
 brain-progression
-[![asciicast](https://asciinema.org/a/Q288PtKlsSGZwlaSCprGkPrKo.svg)](https://asciinema.org/a/Q288PtKlsSGZwlaSCprGkPrKo)
 
 ## Start IsPrime Game
 
 brain-prime
-[![asciicast](https://asciinema.org/a/KCXSDpvdpbQC1X5EU99d8lsBf.svg)](https://asciinema.org/a/KCXSDpvdpbQC1X5EU99d8lsBf)
